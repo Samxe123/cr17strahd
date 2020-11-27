@@ -1,0 +1,345 @@
+[
+	{
+		"name": "CR 17 Strahd",
+		"size": "M",
+		"type": {
+			"type": "undead",
+			"tags": [
+				"Shapechanger"
+			]
+		},
+		"source": "CRStrahd",
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"natural armor"
+				]
+			},
+			{
+				"ac": 21,
+				"from": [
+					"Armor of Stahd"
+				]
+			}
+		],
+		"hp": {
+			"formula": "18d8 + 90",
+			"average": 171
+		},
+		"speed": {
+			"walk": 30,
+			"climb": 30
+		},
+		"str": 22,
+		"dex": 18,
+		"con": 20,
+		"int": 20,
+		"wis": 16,
+		"cha": 20,
+		"passive": 23,
+		"cr": {
+			"cr": "17",
+			"lair": "18"
+		},
+		"shortName": true,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"senseTags": [
+			"SD"
+		],
+		"languages": [
+			"Abyssal",
+			"Common",
+			"Draconic",
+			"Elvish",
+			"Giant",
+			"Infernal"
+		],
+		"damageTags": [
+			"S",
+			"L",
+			"N",
+			"P"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"DR",
+			"E",
+			"GI",
+			"I"
+		],
+		"save": {
+			"dex": "+10",
+			"wis": "+9",
+			"cha": "+11"
+		},
+		"skill": {
+			"arcana": "+15",
+			"intimidation": "+11",
+			"perception": "+13",
+			"religion": "+11",
+			"stealth": "+13"
+		},
+		"resist": [
+			{
+				"resist": [
+					"necrotic",
+					"poison"
+				]
+			},
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "that is nonmagical"
+			}
+		],
+		"conditionImmune": [
+			"exhaustion"
+		],
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"If Strahd isn't in running water or sunlight, he can",
+					"use his action to polymorph into a Tiny bat, a Medium wolf, or a",
+					"Medium cloud of mist, or back into his true form.",
+					"While in bat or wolf form, Strahd can't speak. In bat form, his",
+					"walking speed is 5 feet, and he has a flying speed of 40 feet. In wolf",
+					"form, his walking speed is 40 feet. His statistics, other than size and",
+					"speed, are unchanged. Anything he is wearing transforms with him,",
+					"but nothing he is carrying does. He reverts to his true form if he",
+					"While in mist form, Strahd can't take any actions, speak, or",
+					"manipulate objects. He is weightless, has a flying speed of 20 feet,",
+					"can hover, can enter a hostile creature's space and stop there. In",
+					"addition, if air can pass through a space, the mist can do so without",
+					"squeezing, and he can't pass through water. He has advantage on",
+					"Strength, Dexterity, and Constitution saving throws, and he is",
+					"immune to all nonmagical damage, except the damage he takes",
+					"from sunlight."
+				]
+			},
+			{
+				"name": "Misty Escape",
+				"entries": [
+					"When Strahd drops to 0 hit points outside his coffin,",
+					"he transforms into a cloud of mist (as in the Shapechanger trait)",
+					"instead of falling {@condition unconscious}, provided that he isn't in running water",
+					"or sunlight. If he can't transform he is destroyed.",
+					"While he has 0 hit points in mist form, he can't revert to his",
+					"vampire form, and he must reach his coffin within 2 hours or be",
+					"destroyed. Once in his coffin, he reverts to his vampire form and is",
+					"{@condition paralyzed} for 1 hour until he regains 1 hit point."
+				]
+			},
+			{
+				"name": "Legendary Resistance (3/Day)",
+				"entries": [
+					"If Strahd fails a saving throw, he can choose to succeed instead."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"Strahd's weapon attacks are magical."
+				]
+			},
+			{
+				"name": "Regeneration (Vampire)",
+				"entries": [
+					"Strahd regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If Strahd takes radiant damage or damage from holy water, this trait doesn't function at the start of Strahd's next turn."
+				]
+			},
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"Strahd can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			},
+			{
+				"name": "Unholy Persistance",
+				"entries": [
+					"Strahd has advantage on rolls against an effect that turns undead."
+				]
+			},
+			{
+				"name": "Vampire Weaknesses",
+				"entries": [
+					"Listed on page 297 of the Monster Manual."
+				]
+			}
+		],
+		"traitTags": [
+			"Legendary Resistances",
+			"Light Sensitivity",
+			"Magic Weapons",
+			"Regeneration",
+			"Shapechanger",
+			"Spider Climb"
+		],
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"Strahd is a 9th-level spellcaster. His spellcasting",
+					"ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks)."
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell mage hand}",
+							"{@spell prestidigitation}",
+							"{@spell ray of frost}"
+						]
+					},
+					"1": {
+						"spells": [
+							"{@spell comprehend languages}",
+							"{@spell fog cloud}",
+							"{@spell sleep}"
+						],
+						"slots": 4
+					},
+					"2": {
+						"spells": [
+							"{@spell detect thoughts}",
+							"{@spell gust of wind}",
+							"{@spell mirror image}"
+						],
+						"slots": 3
+					},
+					"3": {
+						"spells": [
+							"{@spell animate dead}",
+							"{@spell counterspell}",
+							"{@spell fireball}"
+						],
+						"slots": 3
+					},
+					"4": {
+						"spells": [
+							"{@spell blight}",
+							"{@spell greater invisibility}",
+							"{@spell polymorph}"
+						],
+						"slots": 3
+					},
+					"5": {
+						"spells": [
+							"{@spell cloudkill}",
+							"{@spell scrying}"
+						],
+						"slots": 1
+					}
+				},
+				"ability": "int",
+				"type": "spellcasting"
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack (Vampire Form Only)",
+				"entries": [
+					"Strahd makes two attacks, any",
+					"combination of longsword and unarmed strike."
+				]
+			},
+			{
+				"name": "Longsword (Vampire Form w/ Armor of Strahd Only)",
+				"entries": [
+					"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}27 ({@damage 6d6 + 9}) slashing damage, plus 7 ({@damage 2d6}) lightning damage."
+				]
+			},
+			{
+				"name": "Unarmed Strike (Vampire Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d6 + 6}) slashing damage, plus 14 ({@damage 4d6}) necrotic damage. If the target is a creature Strahd can grapple it (escape {@dc 22}) instead of dealing the slashing damage. A {@condition grappled} creature provides partial cover to Strahd."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 12} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Strahd, {@condition incapacitated}, or {@condition restrained}. {@h}15 ({@damage 1d6 + 6}) piercing damage, plus 14 ({@damage 4d6}) necrotic damage and the target has disadvantage against Strahd's charm attack for 1 minute. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Strahd regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under Strahd's control."
+				]
+			},
+			{
+				"name": "Charm",
+				"entries": [
+					"Strahd targets one creature he can see within 60 feet of him. If the target can see Strahd, the target must succeed on a {@dc 19} Wisdom saving throw against this magic or be {@condition charmed}. The {@condition charmed} target regards Strahd as a trusted friend to be heeded and protected, by force if needed. The target isn't under Strahd's control, but it takes Strahd's request and actions in the most favorable way and lets Strahd bite it.",
+					"Each time Strahd or his companions do anything harmful to the",
+					"target, it can repeat the saving throw, ending the effect on itself on a",
+					"success. Otherwise the effect lasts 24 hours or until Strahd is",
+					"destroyed, on a different plane of existence than the target, or takes",
+					"a bonus action to end the effect."
+				]
+			},
+			{
+				"name": "Children of the Night",
+				"entries": [
+					"Strahd magically calls {@dice 2d4} swarms of bats or swarms of rats, provided that the sun isn't up. While outdoors, Strahd can call {@dice 3d6} wolves instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Strahd and obeying his spoken commands."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"charmed"
+		],
+		"bonus": [
+			{
+				"name": "Bite",
+				"entries": [
+					"Strahd makes a bite attack."
+				]
+			},
+			{
+				"name": "Armor of Strahd",
+				"entries": [
+					"Strahd magically summons his armor and longsword. The armor and sword replace the armor, clothes, and equipment he was wearing."
+				]
+			}
+		],
+		"legendaryActions": 3,
+		"legendary": [
+			{
+				"name": "Attack",
+				"entries": [
+					"Strahd makes a longsword or unarmed strike attack."
+				]
+			},
+			{
+				"name": "Charm (Cost 2 Actions)",
+				"entries": [
+					"Strahd makes a charm attack."
+				]
+			},
+			{
+				"name": "Shocking Bolt (Cost 2 Actions, requires Armor of Strahd)",
+				"entries": [
+					"{@atk rs} {@hit 11} to hit (with advantage on the attack if the target is wearing armor made of metal), range 60 ft., one target. {@h}14 ({@damage 4d6}) lightning damage."
+				]
+			}
+		],
+		"legendaryHeader": [
+			"Strahd can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. If Strahd has unspent legendary actions at the end of the round, he may spend and immediately use his remaining legendary actions. Strahd regains spent legendary actions at the start of his turn."
+		],
+		"fluff": {
+			"entries": [
+				"A higher CR version of the legendary Strahd."
+			]
+		}
+	}
+]
